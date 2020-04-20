@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/wind" />
+
+                <TextView
+                    android:id="@+id/windSpeedValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/windSpeed"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/pressure">/</ImageView>
+
+                <TextView
+                    android:id="@+id/pressureValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/pressure"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/precipitation" />
+
+                <TextView
+                    android:id="@+id/precipitationValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/precipitation"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/temperature" />
+
+                <TextView
+                    android:id="@+id/temperatureValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/temperature"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/summaryIconToday"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                     />
+
+
+                <TextView
+                    android:id="@+id/summaryValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/test"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/humidity" />
+
+                <TextView
+                    android:id="@+id/humidityValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/humidity"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/visibility" />
+
+                <TextView
+                    android:id="@+id/visibilityValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/visibility"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/cc" />
+
+                <TextView
+                    android:id="@+id/cloudCoverValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/cloudCover"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="6dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="83dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/imageWidth"
+                    android:layout_height="@dimen/imageHeight"
+                    android:layout_marginTop="@dimen/todayImageMarginTop"
+                    android:contentDescription="@string/icon"
+                    android:src="@drawable/ozone" />
+
+                <TextView
+                    android:id="@+id/ozoneValueToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/todayValuePaddingTop"
+                    android:text="TextView"
+                    android:textColor="#FFFF"
+                    android:textSize="@dimen/todayValueTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/todayTypeMarginTop"
+                    android:paddingTop="@dimen/todayTypePaddingTop"
+                    android:text="@string/Ozone"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/todayTypeImageTextSize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
